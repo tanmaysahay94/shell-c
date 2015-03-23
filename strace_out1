@@ -1,0 +1,39 @@
+execve("./status_library.c.out", ["./status_library.c.out", "2788"], [/* 82 vars */]) = 0
+brk(0)                                  = 0x1b84000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7637000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=186343, ...}) = 0
+mmap(NULL, 186343, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9ae7609000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1845024, ...}) = 0
+mmap(NULL, 3953344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9ae7051000
+mprotect(0x7f9ae720c000, 2097152, PROT_NONE) = 0
+mmap(0x7f9ae740c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7f9ae740c000
+mmap(0x7f9ae7412000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7412000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7608000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7606000
+arch_prctl(ARCH_SET_FS, 0x7f9ae7606740) = 0
+mprotect(0x7f9ae740c000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f9ae7639000, 4096, PROT_READ) = 0
+munmap(0x7f9ae7609000, 186343)          = 0
+brk(0)                                  = 0x1b84000
+brk(0x1ba5000)                          = 0x1ba5000
+open("/proc/2788/status", O_RDONLY)     = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7636000
+read(3, "Name:\tdeja-dup-monito\nState:\tS ("..., 1024) = 845
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9ae7635000
+write(1, "State:\tS (sleeping)\n", 20)  = 20
+write(1, "PPid:\t2182\n", 11)           = 11
+write(1, "Threads:\t3\n", 11)           = 11
+read(3, "", 1024)                       = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

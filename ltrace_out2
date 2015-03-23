@@ -1,0 +1,9 @@
+__libc_start_main(0x400836, 2, 0x7fffc716ef68, 0x400b20 <unfinished ...>
+open("/proc/2788/status", 0, 00)                                                                                                       = 3
+read(3, "Name:\tdeja-dup-monito\nState:\tS ("..., 1024)                                                                                = 845
+syscall(1, 1, 0x7fffc7155fb0, 20)                                                                                                      = 20
+syscall(1, 1, 0x7fffc7155fb0, 11)                                                                                                      = 11
+syscall(1, 1, 0x7fffc7155fb0, 11)                                                                                                      = 11
+syscall(1, 1, 0x400bcd, 1)                                                                                                             = 1
+read(3, "", 1024)                                                                                                                      = 0
++++ exited (status 0) +++
